@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #ffffff;
+  --color-title: #111111;
+  --color-accent: #000000;
+  --color-accent-light: #ffffff;
+  --color-subtitle: #666666;
+  --color-muted-gray: #888888;
+  --color-card-light: #f0f0f0;
+  --font-title: "Rochester", cursive;
+  --font-text: "Tenor Sans", sans-serif;
+}

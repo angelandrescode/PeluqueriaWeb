@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peluqueria | Tu estilo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rochester&family=Tenor+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body
+    class="bg-bg text-title font-sans min-h-screen flex flex-col items-center justify-between selection:bg-neutral-200"
+  >
+    <nav
+      id="mobile-nav"
+      class="fixed bg-accent w-screen h-screen z-100 -translate-x-full sm:hidden"
+    >
+      <div
+        class="m-10 mb-0 text-2xl md:text-3xl font-title tracking-wide text-bg"
+      >
+        Tu estilo
+      </div>
+      <ul class="flex flex-col gap-20 pl-10 justify-center h-full">
+        <li id="servicios-link-mobile" class="text-bg font-text text-3xl">
+          Servicios
+        </li>
+        <li id="casos-link-mobile" class="text-bg font-text text-3xl">Casos</li>
+        <li id="cita-link-mobile" class="text-bg font-text text-3xl">Cita</li>
+      </ul>
+    </nav>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <header
+          class="flex justify-between items-center w-full mb-20 lg:mb-52 px-6 py-6 md:px-16"
+        >
+          <div class="text-2xl md:text-3xl font-title tracking-wide text-title">
+            Tu estilo
+          </div>
+
+          <nav
+            class="hidden sm:flex gap-6 md:gap-8 text-xs tracking-[0.15em] font-medium text-title uppercase"
+          >
+            <a
+              id="servicios-link"
+              style="cursor: pointer"
+              class="hover:opacity-60 transition-opacity"
+              >Servicios</a
+            >
+            <a
+              id="casos-link"
+              style="cursor: pointer"
+              class="hover:opacity-60 transition-opacity"
+              >Casos</a
+            >
+            <a
+              id="cita-link"
+              style="cursor: pointer"
+              class="hover:opacity-60 transition-opacity"
+              >Cita</a
+            >
+          </nav>
+          <div class="sm:hidden">
+            <svg
+              id="nav-button"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2 active:scale-95 transition"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 6l16 0" />
+              <path d="M4 12l16 0" />
+              <path d="M4 18l16 0" />
+            </svg>
+          </div>
+        </header>
+
+        <main
+          class="rounded-sm flex flex-col items-center gap-40 items-stretch w-full my-auto min-h-[500px]"
+        >
+          <section
+            class="px-6 md:px-16 flex flex-col justify-center gap-10 lg:justify-around lg:flex-row items-center h-fit w-full"
+          >
+            <aside class="flex flex-col gap-2">
+              <p
+                class="text-anim text-muted-gray font-text text-xs tracking-[0.25em] font-medium uppercase"
+              >
+                Peluquería que se adapta a tu estilo
+              </p>
+              <h1
+                class="title-anim font-title italic text-5xl lg:text-6xl font-normal text-title leading-[1.15] max-w-xl"
+              >
+                Cortes con calma, color con intención.
+              </h1>
+              <p
+                class="text-anim text-subtitle text-base font-light font-text leading-relaxed max-w-md mt-2"
+              >
+                Un salón para transformar tu pelo sin perder tu esencia:
+                diagnóstico cuidado, técnica precisa y acabados que se sienten
+                naturales desde el primer día.
+              </p>
+              <a
+                class="reservar-button font-text w-fit bg-accent text-accent-light px-6 py-3 rounded-full text-xs font-medium tracking-wider uppercase hover:opacity-85 transition-opacity mt-4 shadow-sm"
+              >
+                Reservar cita
+              </a>
+            </aside>
+            <aside class="flex">
+              <div
+                class="card-anim bg-card-light p-6 h-fit rounded-[2.5rem] flex flex-col gap-5"
+              >
+                <img
+                  class="w-xl h-lg object-cover rounded-2xl border"
+                  src="FOTO1.webp"
+                  alt="demostración-corte-de-pelo"
+                />
+                <div class="flex justify-between items-center">
+                  <p
+                    class="text-[10px] md:text-xs tracking-widest text-muted-gray font-text font-light uppercase"
+                  >
+                    Una cliente satisfecha · Peluqueria Tu estilo
+                  </p>
+                </div>
+              </div>
+            </aside>
+          </section>
+          <section
+            id="servicios"
+            class="bg-bg text-title font-sans px-6 md:px-16 py-20 w-full max-w-7xl mx-auto flex flex-col items-center"
+          >
+            <div
+              class="text-center max-w-3xl mb-16 flex flex-col items-center gap-4"
+            >
+              <p
+                class="text-anim text-muted-gray text-[10px] md:text-xs tracking-[0.3em] font-medium font-text uppercase"
+              >
+                Servicios
+              </p>
+              <h2
+                class="title-anim font-title italic text-4xl md:text-5xl lg:text-6xl font-normal text-title leading-[1.2] max-w-2xl"
+              >
+                Tu pelo, trabajado con técnica y criterio.
+              </h2>
+              <p
+                class="text-anim text-subtitle text-sm md:text-base font-light font-text leading-relaxed max-w-2xl mt-2"
+              >
+                Desde el corte diario hasta una transformación de color, cada
+                servicio empieza con una escucha real y termina con un acabado
+                fácil de llevar.
+              </p>
+            </div>
+
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full"
+            >
+              <article
+                class="bg-bg border border-neutral-200/80 rounded-[20px] p-6 md:p-8 flex flex-col gap-4 transition-all duration-300 hover:border-neutral-400"
+              >
+                <div class="text-title opacity-90">
+                  <svg
+                    class="w-6 h-6"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M14.5 4h-5A3.5 3.5 0 0 0 6 7.5v3A3.5 3.5 0 0 0 9.5 14h5a3.5 3.5 0 0 0 3.5-3.5v-3A3.5 3.5 0 0 0 14.5 4z"
+                    ></path>
+                    <path d="M12 14v4a2 2 0 0 1-2 2H9"></path>
+                    <path d="M16 8h.01"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3
+                    class="title-anim font-text text-lg md:text-xl font-normal text-title mb-2"
+                  >
+                    Corte de autor
+                  </h3>
+                  <p
+                    class="text-anim text-subtitle text-xs md:text-sm font-light font-text leading-relaxed"
+                  >
+                    Forma, movimiento y acabado adaptados a tu estilo diario.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                class="bg-bg border border-neutral-200/80 rounded-[20px] p-6 md:p-8 flex flex-col gap-4 transition-all duration-300 hover:border-neutral-400"
+              >
+                <div class="text-title opacity-90">
+                  <svg
+                    class="w-6 h-6"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M12 22a7 7 0 0 0 7-7c0-4.3-7-13-7-13S5 10.7 5 15a7 7 0 0 0 7 7z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3
+                    class="title-anim font-text text-lg md:text-xl font-normal text-title mb-2"
+                  >
+                    Color natural
+                  </h3>
+                  <p
+                    class="text-anim text-subtitle text-xs md:text-sm font-light font-text leading-relaxed"
+                  >
+                    Balayage, matices y brillo con un resultado suave y
+                    luminoso.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                class="bg-bg border border-neutral-200/80 rounded-[20px] p-6 md:p-8 flex flex-col gap-4 transition-all duration-300 hover:border-neutral-400"
+              >
+                <div class="text-title opacity-90">
+                  <svg
+                    class="w-6 h-6"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M12 3v3m0 12v3M3 12h3m12 0h3m-3.5-6.5l-2 2m-9 9l-2 2m13 0l-2-2m-9-9l-2-2"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3
+                    class="title-anim font-text text-lg md:text-xl font-normal text-title mb-2"
+                  >
+                    Styling evento
+                  </h3>
+                  <p
+                    class="text-anim text-subtitle text-xs md:text-sm font-light font-text leading-relaxed"
+                  >
+                    Ondas, recogidos y pulidos para verte elegante sin rigidez.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                class="bg-bg border border-neutral-200/80 rounded-[20px] p-6 md:p-8 flex flex-col gap-4 transition-all duration-300 hover:border-neutral-400"
+              >
+                <div class="text-title opacity-90">
+                  <svg
+                    class="w-6 h-6"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3
+                    class="title-anim font-text text-lg md:text-xl font-normal text-title mb-2"
+                  >
+                    Tratamiento
+                  </h3>
+                  <p
+                    class="text-anim text-subtitle text-xs md:text-sm font-light font-text leading-relaxed"
+                  >
+                    Rutinas de reparación, nutrición y brillo según la necesidad
+                    del cabello.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section
+            id="casos"
+            class="bg-black text-white font-text px-6 md:px-16 py-20 w-screen min-h-screen flex flex-col items-center"
+          >
+            <div
+              class="text-center max-w-3xl mb-16 flex flex-col items-center gap-4"
+            >
+              <p
+                class="text-anim text-muted-gray text-[10px] md:text-xs tracking-[0.3em] font-medium uppercase"
+              >
+                Casos de éxito
+              </p>
+              <h2
+                class="title-anim font-title italic text-4xl md:text-5xl lg:text-6xl font-normal text-white leading-[1.2] max-w-4xl px-4"
+              >
+                Transformaciones listas para sustituir por fotos reales.
+              </h2>
+              <p
+                class="text-anim text-muted-gray text-sm md:text-base font-light leading-relaxed max-w-2xl opacity-70 mt-2"
+              >
+                Nuestra peluqueria ha dejado radiantes de belleza a muchas
+                personas. <br />
+                ¿Quieres ser la próxima?
+              </p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-6 w-full">
+              <article
+                class="card-anim p-4 flex flex-col gap-5 overflow-hidden shadow-xl"
+              >
+                <div
+                  class="w-full rounded-[18px] flex items-center justify-center"
+                >
+                  <img
+                    src="FOTO2.jpg"
+                    class="w-xl h-lg object-cover aspect-square rounded-2xl"
+                  />
+                </div>
+
+                <div class="px-2 pb-3">
+                  <h3 class="font-text text-xl font-normal text-white mb-1.5">
+                    Brillo recuperado
+                  </h3>
+                  <p
+                    class="text-muted-gray text-xs md:text-sm font-light leading-relaxed"
+                  >
+                    Melena pulida, saneada y con reflejo limpio.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                class="card-anim p-4 flex flex-col gap-5 overflow-hidden shadow-xl"
+              >
+                <div
+                  class="w-full rounded-[18px] flex items-center justify-center"
+                >
+                  <img
+                    src="FOTO3.webp"
+                    class="w-xl h-lg object-cover rounded-2xl"
+                  />
+                </div>
+                <div class="px-2 pb-3">
+                  <h3 class="font-text text-xl font-normal text-white mb-1.5">
+                    Corte con movimiento
+                  </h3>
+                  <p
+                    class="text-muted-gray text-xs md:text-sm font-light leading-relaxed"
+                  >
+                    Capas ligeras y forma pensada para el día a día.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                class="card-anim p-4 flex flex-col gap-5 overflow-hidden shadow-xl"
+              >
+                <div
+                  class="w-full rounded-[18px] flex items-center justify-center"
+                >
+                  <img
+                    src="FOTO4.webp"
+                    class="w-xl h-lg object-cover rounded-2xl"
+                  />
+                </div>
+                <div class="px-2 pb-3">
+                  <h3 class="font-text text-xl font-normal text-white mb-1.5">
+                    Color
+                  </h3>
+                  <p
+                    class="text-muted-gray text-xs md:text-sm font-light leading-relaxed"
+                  >
+                    Coloreado de cabello
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section
+            class="bg-bg font-text px-6 md:px-16 py-12 w-full max-w-7xl mx-auto"
+          >
+            <div
+              class="bg-neutral-50 border border-neutral-200/60 rounded-[32px] p-8 md:p-12 lg:p-16"
+            >
+              <div
+                class="grid grid-cols-1 divide-y divide-neutral-200 lg:grid-cols-3 gap-10 lg:gap-0 lg:divide-x lg:divide-y-0 lg:divide-neutral-200"
+              >
+                <article
+                  class="flex pb-3 lg:pb-0 flex-col gap-3 lg:px-8 first:lg:pl-0"
+                >
+                  <span
+                    class="title-anim font-title text-4xl md:text-5xl font-light text-title tracking-tighter"
+                  >
+                    01
+                  </span>
+                  <h3
+                    class="title-anim font-text text-xl font-normal text-title mt-1"
+                  >
+                    Diagnóstico honesto
+                  </h3>
+                  <p
+                    class="text-anim text-subtitle text-sm font-light leading-relaxed max-w-sm"
+                  >
+                    Antes de cortar o aplicar color, revisamos textura, rutina y
+                    objetivo.
+                  </p>
+                </article>
+
+                <article class="flex pb-3 lg:pb-0 flex-col gap-3 lg:px-12">
+                  <span
+                    class="title-anim font-title text-4xl md:text-5xl font-light text-title tracking-tighter"
+                  >
+                    02
+                  </span>
+
+                  <h3
+                    class="title-anim font-text text-xl font-normal text-title mt-1"
+                  >
+                    Técnica limpia
+                  </h3>
+
+                  <p
+                    class="text-anim text-subtitle text-sm font-light leading-relaxed max-w-sm"
+                  >
+                    Trabajamos el detalle sin sobrecargar el cabello ni el
+                    resultado.
+                  </p>
+                </article>
+
+                <article
+                  class="flex pb-3 lg:pb-0 flex-col gap-3 lg:px-12 last:lg:pr-0"
+                >
+                  <span
+                    class="title-anim font-title text-4xl md:text-5xl font-light text-title tracking-tighter"
+                  >
+                    03
+                  </span>
+
+                  <h3
+                    class="title-anim ont-text text-xl font-normal text-title mt-1"
+                  >
+                    Mantenimiento claro
+                  </h3>
+
+                  <p
+                    class="text-anim text-subtitle text-sm font-light leading-relaxed max-w-sm"
+                  >
+                    Te vas con una pauta sencilla para conservar forma, brillo y
+                    salud.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </section>
+          <section
+            id="cita"
+            class="bg-black text-white font-text px-6 md:px-16 pt-24 pb-12 w-screen mx-auto flex flex-col items-center"
+          >
+            <div
+              class="text-center max-w-4xl mb-16 flex flex-col items-center gap-4"
+            >
+              <p
+                class="text-anim text-muted-gray text-[10px] md:text-xs tracking-[0.3em] font-medium uppercase opacity-80"
+              >
+                Reserva
+              </p>
+
+              <h2
+                class="title-anim font-title italic text-4xl md:text-6xl lg:text-7xl font-normal text-white leading-[1.2] mt-2 max-w-3xl"
+              >
+                Ven con una idea. Sal con un plan.
+              </h2>
+
+              <p
+                class="text-anim text-subtitle text-sm md:text-base font-light leading-relaxed max-w-2xl opacity-70 mt-3"
+              >
+                Escríbenos para una cita o una valoración previa.<br />
+                Respondemos con disponibilidad y el servicio recomendado.
+              </p>
+
+              <a
+                class="reservar-button bg-white text-black px-8 py-3.5 rounded-full text-xs font-medium tracking-wider uppercase hover:bg-neutral-100 transition-colors mt-6 shadow-sm"
+              >
+                Pedir cita
+              </a>
+            </div>
+
+            <footer
+              class="w-full border-t border-neutral-900 pt-8 mt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-light text-muted-gray tracking-wide"
+            >
+              <div>
+                C/ Santa Marta n°9 11, Carbajosa De La Sagrada, Castilla y León,
+                Spain 37188
+              </div>
+
+              <a
+                href="tel:+34600000000"
+                class="hover:text-white transition-colors"
+              >
+                +34 600530817
+              </a>
+            </footer>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="./src/main.js"></script>
+</html>
