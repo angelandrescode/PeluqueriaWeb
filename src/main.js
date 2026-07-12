@@ -108,11 +108,3 @@ document.querySelector("#nav-button").addEventListener("click", () => {
   });
   scroll(0, 0);
 });
-
-document.querySelectorAll(".reservar-button").forEach((button) => {
-  button.addEventListener("click", () => {
-    alert(
-      "Compra el servicio de desarrollo web para que este botón funcione y puedan reservar desde TU web",
-    );
-  });
-});
